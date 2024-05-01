@@ -14,7 +14,6 @@
 <body>
 
   <header>
-    <h1>ぽちポケ</h1>
   </header>
 
   <main>
@@ -22,17 +21,20 @@
     <div class="container">
       <!-- サイドメニュー -->
       <div class="side-menu">
-        <button id="new-key">＋</button>
         <div id="list" class="list">
           <!-- ここに追加データが挿入される -->
         </div>
-        <div class="side-menu-button"></div>
-        <button id="clear">all clear</button>
+        <div class="side-menu-button">
+          <button id="new-key">＋</button>
+          <button id="dog-profile">profile</button>
+          <button id="clear">all clear</button>
+        </div>
       </div>
 
 
       <!-- メインメニュー -->
       <div class="main-contents">
+        <h1>ぽちポケ</h1>
         <input type="text" id="key" placeholder="タイトルを入力">
         <textarea id="memo" placeholder="メモを入力"></textarea>
         <button id="save">save</button>

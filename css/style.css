@@ -25,6 +25,11 @@
     flex-direction: column;
 }
 
+.side-menu-button{
+    display: flex;
+    justify-content: left;
+}
+
 .main-contents {
     margin-left: 18%; /* サイドメニューの幅と余白に合わせて調整 */
     padding: 10px;
@@ -33,6 +38,10 @@
     display: flex;
     flex-direction: column;
     position: relative; /* 重なりを避けるためにrelativeを設定 */
+}
+
+h1{
+    font-size: 50px;
 }
 
 .hidden {
