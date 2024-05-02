@@ -44,6 +44,10 @@ h1{
     font-size: 50px;
 }
 
+#memo {
+    height: 300px; /* 高さを300pxに設定 */
+}
+
 .hidden {
     display: none;
 }

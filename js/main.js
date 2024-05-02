@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // 最初は非表示にする
-    $("#key, #memo, #save").addClass('hidden');
+    $("#key, #memo, #profile-name, #profile-dateofbirth, #save").addClass('hidden');
 
     // 新規作成ボタン
     $("#new-key").on("click", function () {
@@ -8,6 +8,15 @@ $(document).ready(function () {
         $("#key").val("");
         $("#memo").val("");
     });
+
+        // プロフィール作成ボタン
+        $("#dog-profile").on("click", function () {
+            $("#key, #memo, #profile-name, #profile-dateofbirth, #save").removeClass("hidden");
+            $("#key").val("初回登録情報");
+            $("#memo").val("性別：\n愛称：\n犬種：\n");  // テンプレートを追加
+            $("#profile-name").val("");  // テンプレートを追加
+            $("#profile-dateofbirth").val(""); // 例として固定日付を設定
+        });
 
     // 保存ボタン
     $("#save").on("click", function () {
